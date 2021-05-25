@@ -1,26 +1,30 @@
 import styled from "styled-components";
+import { Container } from "react-bootstrap";
 
-export const Container = styled.div`
-  display: flex;
-  background-color: green;
-  justify-content: center;
+export const ContainerFluid = styled(Container)`
+  padding: 0;
 `;
 
-export const Content = styled.div`
-  flex-direction: row;
+export const ContainerView = styled(Container)`
   background-color: pink;
-`;
-
-export const SideBarMenu = styled.div`
-  height: 90%;
-  background-color: red;
-`;
-
-export const HeaderContainer = styled.div`
+  display: flex;
   justify-content: center;
   align-items: center;
-  background-color: blue;
+  margin-top: 10px;
 `;
-export const Title = styled.h1`
-  color: red;
+
+export const Teste = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
+export const Body = styled.div`
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 980px;
+  background-color: pink;
+  margin-top: 30px;
 `;

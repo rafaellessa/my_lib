@@ -1,23 +1,19 @@
 import React from "react";
-import {
-  Container,
-  HeaderContainer,
-  SideBarMenu,
-  Title,
-  Content
-} from "./styles";
+// import { Row, Col } from 'react-bootstrap';
+import { ContainerFluid, ContainerView, Teste } from "./styles";
+import Header from "../../components/Header";
 
 const Home: React.FC = () => (
-  <>
-    <Container />
-    <Content>
-      <SideBarMenu>
-        <HeaderContainer>
-          <Title>Menu</Title>
-        </HeaderContainer>
-      </SideBarMenu>
-    </Content>
-  </>
+  <ContainerFluid fluid>
+    <Header />
+    <section>
+      <ContainerView>
+        <Teste>
+          <h1>Ola</h1>
+        </Teste>
+      </ContainerView>
+    </section>
+  </ContainerFluid>
 );
 
 export default Home;

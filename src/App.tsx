@@ -1,6 +1,9 @@
 import React from "react";
+import "./App.css";
 import Home from "./screens/Home";
 
-const App: React.FC = () => <Home />;
+function App() {
+  return <Home />;
+}
 
 export default App;
